@@ -1,3 +1,9 @@
+$ mkdir learngit   在目录下创建一个新的文件用于存放版本 改文件被称为版本库
+$ cd learngit      将环境跳转到改版本库中
+$ pwd			   获取当前文件所在的环境
+
+通过git init命令把这个目录变成Git可以管理的仓库
+
 将文件放置到D:\Git\git\learngit目录下之后输入
 $ git add xxx.txt
 无提示再输入
@@ -17,4 +23,20 @@ $ git commit -m "wrote a readme file"
  查看被修改的内容
  +代表新增
  -代表删除
+ 
+ git log  查看历代版本
+ git log --pretty=oneline 将版本信息用一行显示出来
+ 
+ 
+ 回退之前请先查询历代版本查看commit 的id很长的那一串
+ git reset --hrad HEAD^   版本回退回退到上一个版本
+ 
+ 版本还原 
+ git reset --hrad  要还原的版本d1commit的id的前几位字符就行了
+ 如果忘记查看历代版本了也不用担心
+ git reflog 用来查询所有存在过的版本的信息第一行数据就可以用来
+ 在工作区修改   add 指令   存放到暂存区(stage)    commit 存储到分支(master)
+ 
+ gif diff HEAD -- gitusenote.txt  查看工作区的版本和版本库里的版本的区别
+ 
  
