@@ -14,7 +14,7 @@ $ git commit -m "wrote a readme file"
  上面的命令输出告诉我们，readme.txt被修改过了，但还没有准备提交的修改
  
  git diff xxx.txt
- 查询被修改的数据吧
+ 查看被修改的内容
  +代表新增
  -代表删除
  
